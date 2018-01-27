@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class TestTubeManager : MonoBehaviour {
 
+    public GameObject input;
+    public GameObject output;
+    
     // Use this for initialization
     void Start () {
 		
@@ -16,12 +19,12 @@ public class TestTubeManager : MonoBehaviour {
 
     // Called when corresponding PushButton is pressed.
     public void Push() {
-    
+        int colour = input.GetComponent<ElementManager>().RequestColour();
     }
 
     // Called when corresponding PopButton is pressed.
     public void Pop() {
-    
+        
     }
   
 }
