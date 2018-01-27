@@ -603,6 +603,7 @@ MonoBehaviour:
   elementPrefab: {fileID: 1922343522441134, guid: 85811036949c3594fa9b11e8998057b9,
     type: 2}
   gapSize: 0.8
+  expected: 
 --- !u!1 &1389167390
 GameObject:
   m_ObjectHideFlags: 0
