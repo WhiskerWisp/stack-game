@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ElementManager : MonoBehaviour {
+public class ShelfManager : MonoBehaviour {
 
     public List<int> elements;
     public GameObject elementPrefab;

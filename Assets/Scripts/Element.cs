@@ -20,6 +20,10 @@ public class Element : MonoBehaviour {
         colour = col;
     }
 
+    public int GetColour() {
+        return colour;
+    }
+
     public void Deactivate() {
         gameObject.SetActive(false);
     }

@@ -25,15 +25,15 @@ public class TestTubeManager : MonoBehaviour {
 
     // Called when corresponding PushButton is pressed.
     public void Push() {
-        int colour = input.GetComponent<ElementManager>().RequestColour();
+        int colour = input.GetComponent<ShelfManager>().RequestColour();
         if (colour < 1) {
             // Input has no more elements.
             return;
         }
         GameObject element =
-            Instantiate(Instantiate(elementPrefab,
+            Instantiate(elementPrefab,
                                     transform.GetChild(0).position + (new Vector3(0, (stackPointer + 1) * gapSize, -1)),
-                                    Quaternion.identity));
+                                    Quaternion.identity);
         element.GetComponent<Element>().SetColour(colour);
         elements.Add(element);
         stackPointer++;
@@ -41,7 +41,18 @@ public class TestTubeManager : MonoBehaviour {
 
     // Called when corresponding PopButton is pressed.
     public void Pop() {
-        
+        output.GetComponent<ConcoctionManager>().GiveColour(RequestColour());
+    }
+
+    public int RequestColour() {
+        if (stackPointer < 0) {
+            return 0;
+        }
+        int colour = elements[stackPointer].GetComponent<Element>().GetColour();
+        Destroy(elements[stackPointer]);
+        elements.RemoveAt(stackPointer);
+        stackPointer--;
+        return colour;
     }
   
 }
