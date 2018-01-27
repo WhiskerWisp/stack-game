@@ -26,8 +26,8 @@ public class ConcoctionManager : MonoBehaviour {
         }
         GameObject element =
             Instantiate(elementPrefab,
-                                    transform.position + (new Vector3(0, elements.Count * gapSize, -1)),
-                                    Quaternion.identity);
+                        transform.position + (new Vector3(0, elements.Count * gapSize, -1)),
+                        Quaternion.identity);
         element.GetComponent<Element>().SetColour(colour);
         elements.Add(element);
         CheckWinCondition();
