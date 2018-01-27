@@ -15,9 +15,10 @@ public class ElementManager : MonoBehaviour {
     void Start () {
         stackPointer = elements.Count;
         for (int i = 0; i < elements.Count; i++) {
-            GameObject instantiatedPrefab = Instantiate(elementPrefab,
-                                                        transform.position + (new Vector3(0, i * gapSize, 0)),
-                                                        Quaternion.identity);
+            GameObject instantiatedPrefab =
+                Instantiate(elementPrefab,
+                            transform.position + (new Vector3(0, i * gapSize, 0)),
+                            Quaternion.identity);
             instantiatedPrefab.GetComponent<Element>().SetColour(elements[i]);
             instantiatedElements.Add(instantiatedPrefab);
         }
@@ -32,7 +33,8 @@ public class ElementManager : MonoBehaviour {
         if (stackPointer < 0) {
             return 0;
         }
-        instantiatedElements[stackPointer].Deactivate();
+        instantiatedElements[stackPointer].GetComponent<Element>().Deactivate();
+        // Reducing pointer and then incrementing by one. Trying to avoid variable declaration.
         stackPointer--;
         return elements[stackPointer + 1];
     }
