@@ -19,7 +19,7 @@ public class StartGame : MonoBehaviour {
 
     void OnMouseDown() {
         DontDestroyOnLoad(gameObject);
-        Application.LoadLevel("MainGame");
+        UnityEngine.SceneManagement.SceneManager.LoadScene("MainGame");
     }
     
 }
