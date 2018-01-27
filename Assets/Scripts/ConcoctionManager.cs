@@ -12,6 +12,10 @@ public class ConcoctionManager : MonoBehaviour {
     
     // Use this for initialization
     void Start () {
+        // Find StartGame object and set expected.
+        expected = GameObject.FindWithTag("Start").GetComponent<StartGame>().expected;
+        Destroy(GameObject.FindWithTag("Start"));
+        
         elements = new List<GameObject>{};
     }
 	

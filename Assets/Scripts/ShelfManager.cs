@@ -13,6 +13,9 @@ public class ShelfManager : MonoBehaviour {
     
     // Use this for initialization
     void Start () {
+        // Find StartGame object and set settings
+        elements = GameObject.FindWithTag("Start").GetComponent<StartGame>().shelf;
+        
         stackPointer = elements.Count - 1;
         for (int i = 0; i < elements.Count; i++) {
             GameObject instantiatedPrefab =
