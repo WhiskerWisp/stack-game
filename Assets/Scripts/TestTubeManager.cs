@@ -32,7 +32,7 @@ public class TestTubeManager : MonoBehaviour {
         }
         GameObject element =
             Instantiate(Instantiate(elementPrefab,
-                                    transform.position + (new Vector3(0, stackPointer * gapSize, 0)),
+                                    transform.GetChild(0).position + (new Vector3(0, (stackPointer + 1) * gapSize, -1)),
                                     Quaternion.identity));
         element.GetComponent<Element>().SetColour(colour);
         elements.Add(element);

@@ -21,6 +21,6 @@ public class Element : MonoBehaviour {
     }
 
     public void Deactivate() {
-        // TODO: Implement this.
+        gameObject.SetActive(false);
     }
 }
