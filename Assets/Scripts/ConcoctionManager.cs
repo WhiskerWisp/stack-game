@@ -5,6 +5,8 @@ using UnityEngine;
 public class ConcoctionManager : MonoBehaviour {
 
     public GameObject elementPrefab;
+    public float startXPos;
+    public float startYPos;
     public float gapSize;
     public List<int> expected;
 
@@ -26,8 +28,9 @@ public class ConcoctionManager : MonoBehaviour {
         }
         GameObject element =
             Instantiate(elementPrefab,
-                        transform.position + (new Vector3(0, elements.Count * gapSize, -1)),
+                        transform.position + (new Vector3(startXPos, startYPos + (elements.Count * gapSize), -1-(elements.Count * gapSize))),
                         Quaternion.identity);
+        element.transform.parent = gameObject.transform;
         element.GetComponent<Element>().SetColour(colour);
         elements.Add(element);
         CheckWinCondition();
