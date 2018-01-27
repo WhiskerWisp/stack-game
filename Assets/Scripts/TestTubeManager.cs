@@ -26,6 +26,10 @@ public class TestTubeManager : MonoBehaviour {
     // Called when corresponding PushButton is pressed.
     public void Push() {
         int colour = input.GetComponent<ElementManager>().RequestColour();
+        if (colour < 1) {
+            // Input has no more elements.
+            return;
+        }
         GameObject element =
             Instantiate(Instantiate(elementPrefab,
                                     transform.position + (new Vector3(0, stackPointer * gapSize, 0)),
