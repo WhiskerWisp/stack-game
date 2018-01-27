@@ -18,7 +18,7 @@ public class RestartButton : MonoBehaviour {
 		
     }
 
-    void OnMouseDown() {
+    public void ResetBench() {
         concoction.GetComponent<ConcoctionManager>().Restart();
         shelf.GetComponent<ShelfManager>().Restart();
         for (int i = 0; i < testtubes.Count; i++) {

@@ -7,6 +7,7 @@ public class TestTubeManager : MonoBehaviour {
     public GameObject input;
     public GameObject output;
     public GameObject elementPrefab;
+    public float startYPos;
     public float gapSize;
 
     private List<GameObject> elements;
@@ -32,8 +33,9 @@ public class TestTubeManager : MonoBehaviour {
         }
         GameObject element =
             Instantiate(elementPrefab,
-                                    transform.GetChild(0).position + (new Vector3(0, (stackPointer + 1) * gapSize, -1)),
+                                    transform.position + new Vector3(0, startYPos + ((stackPointer + 1) * gapSize), -1-((stackPointer + 1) * gapSize)),
                                     Quaternion.identity);
+        element.transform.parent = gameObject.transform;
         element.GetComponent<Element>().SetColour(colour);
         elements.Add(element);
         stackPointer++;
