@@ -13,7 +13,7 @@ public class ElementManager : MonoBehaviour {
     
     // Use this for initialization
     void Start () {
-        stackPointer = elements.Count;
+        stackPointer = elements.Count - 1;
         for (int i = 0; i < elements.Count; i++) {
             GameObject instantiatedPrefab =
                 Instantiate(elementPrefab,

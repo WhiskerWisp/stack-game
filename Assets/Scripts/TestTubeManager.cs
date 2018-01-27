@@ -15,7 +15,7 @@ public class TestTubeManager : MonoBehaviour {
     // Use this for initialization
     void Start () {
         elements = new List<GameObject>{};
-        stackPointer = elements.Count;
+        stackPointer = elements.Count - 1;
     }
 	
     // Update is called once per frame
@@ -32,6 +32,7 @@ public class TestTubeManager : MonoBehaviour {
                                     Quaternion.identity));
         element.GetComponent<Element>().SetColour(colour);
         elements.Add(element);
+        stackPointer++;
     }
 
     // Called when corresponding PopButton is pressed.
