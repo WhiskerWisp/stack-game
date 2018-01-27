@@ -38,4 +38,11 @@ public class ShelfManager : MonoBehaviour {
         stackPointer--;
         return elements[stackPointer + 1];
     }
+
+    public void Restart() {
+        for (int i = 0; i < elements.Count; i++) {
+            instantiatedElements[i].GetComponent<Element>().Activate();
+        }
+        stackPointer = elements.Count - 1;
+    }
 }

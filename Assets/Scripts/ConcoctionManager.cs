@@ -30,4 +30,11 @@ public class ConcoctionManager : MonoBehaviour {
         element.GetComponent<Element>().SetColour(colour);
         elements.Add(element);
     }
+
+    public void Restart() {
+        while (elements.Count > 0) {
+            Destroy(elements[elements.Count - 1]);
+            elements.RemoveAt(elements.Count - 1);
+        }
+    }
 }

@@ -54,5 +54,10 @@ public class TestTubeManager : MonoBehaviour {
         stackPointer--;
         return colour;
     }
-  
+
+    public void Restart() {
+        while (stackPointer >= 0) {
+            RequestColour();
+        }
+    }
 }
