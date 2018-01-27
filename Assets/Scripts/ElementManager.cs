@@ -6,13 +6,14 @@ public class ElementManager : MonoBehaviour {
 
   public int[] elements;
   public GameObject elementPrefab;
+  public float gapSize;
   
 	// Use this for initialization
 	void Start () {
 		for (int i = 0; i < elements.Length; i++) {
       //print(elements[i]);
       Instantiate(elementPrefab,
-                  transform.position + (new Vector3(0, i * 0.5f, 0)),
+                  transform.position + (new Vector3(0, i * gapSize, 0)),
                   Quaternion.identity);
     }
 	}
