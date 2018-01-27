@@ -6,6 +6,7 @@ public class ShelfManager : MonoBehaviour {
 
     public List<int> elements;
     public GameObject elementPrefab;
+    public float startYPos;
     public float gapSize;
 
     private List<GameObject> instantiatedElements = new List<GameObject>{};
@@ -17,8 +18,9 @@ public class ShelfManager : MonoBehaviour {
         for (int i = 0; i < elements.Count; i++) {
             GameObject instantiatedPrefab =
                 Instantiate(elementPrefab,
-                            transform.position + (new Vector3(0, i * gapSize, 0)),
+                            transform.position + (new Vector3(0, startYPos + (i * gapSize), 0)),
                             Quaternion.identity);
+            instantiatedPrefab.transform.parent = gameObject.transform;
             instantiatedPrefab.GetComponent<Element>().SetColour(elements[i]);
             instantiatedElements.Add(instantiatedPrefab);
         }
