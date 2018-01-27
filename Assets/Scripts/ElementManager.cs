@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class ElementManager : MonoBehaviour {
 
-  public int[] elements;
+  public List<int> elements;
+  private List<int> instantiatedElements;
   public GameObject elementPrefab;
   public float gapSize;
   
 	// Use this for initialization
 	void Start () {
-		for (int i = 0; i < elements.Length; i++) {
-      //print(elements[i]);
+		for (int i = 0; i < elements.Count; i++) {
       Instantiate(elementPrefab,
                   transform.position + (new Vector3(0, i * gapSize, 0)),
                   Quaternion.identity);
