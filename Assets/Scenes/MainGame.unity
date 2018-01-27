@@ -265,6 +265,7 @@ GameObject:
   m_Component:
   - component: {fileID: 528859027}
   - component: {fileID: 528859028}
+  - component: {fileID: 528859029}
   m_Layer: 0
   m_Name: TestTubeStartingPoint
   m_TagString: Untagged
@@ -329,6 +330,19 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!114 &528859029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 528859026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cec802cbb57c29b4b8eb35fb47e7ae42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  elements: 
+  elementPrefab: {fileID: 0}
 --- !u!1 &792185593
 GameObject:
   m_ObjectHideFlags: 0
@@ -494,7 +508,7 @@ Transform:
   m_Children:
   - {fileID: 528859027}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1340325409
 GameObject:
@@ -523,7 +537,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1340325411
 SpriteRenderer:
@@ -578,6 +592,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1611274374}
   - component: {fileID: 1611274375}
+  - component: {fileID: 1611274376}
   m_Layer: 0
   m_Name: InputStartingPoint
   m_TagString: Untagged
@@ -642,3 +657,17 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!114 &1611274376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1611274373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cec802cbb57c29b4b8eb35fb47e7ae42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  elements: 000000000000000000000000000000000000000000000000
+  elementPrefab: {fileID: 1922343522441134, guid: 85811036949c3594fa9b11e8998057b9,
+    type: 2}
