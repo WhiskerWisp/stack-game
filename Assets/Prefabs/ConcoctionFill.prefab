@@ -20,7 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4423311987714396}
   - component: {fileID: 212608640110350128}
-  - component: {fileID: 114139230745524036}
+  - component: {fileID: 114148731848631986}
   m_Layer: 0
   m_Name: ConcoctionFill
   m_TagString: Untagged
@@ -41,7 +41,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114139230745524036
+--- !u!114 &114148731848631986
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -49,9 +49,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1461643419254022}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 24ff24b64a87d1543bff017f6a4e2bed, type: 3}
+  m_Script: {fileID: 11500000, guid: 227a734f7c8185b4882b1d22edd637c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fills:
+  - {fileID: 21300000, guid: 871291030fd06764e98bb67f5ea85feb, type: 3}
+  - {fileID: 21300002, guid: 871291030fd06764e98bb67f5ea85feb, type: 3}
+  - {fileID: 21300004, guid: 871291030fd06764e98bb67f5ea85feb, type: 3}
+  - {fileID: 21300006, guid: 871291030fd06764e98bb67f5ea85feb, type: 3}
+  - {fileID: 21300008, guid: 871291030fd06764e98bb67f5ea85feb, type: 3}
+  - {fileID: 21300010, guid: 871291030fd06764e98bb67f5ea85feb, type: 3}
 --- !u!212 &212608640110350128
 SpriteRenderer:
   m_ObjectHideFlags: 1

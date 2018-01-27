@@ -37,7 +37,7 @@ GameObject:
   - component: {fileID: 4073263997457134}
   - component: {fileID: 212294493857924888}
   m_Layer: 0
-  m_Name: Glow
+  m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -53,12 +53,12 @@ GameObject:
   - component: {fileID: 4126919267987286}
   - component: {fileID: 212878155459972810}
   m_Layer: 0
-  m_Name: Fill
+  m_Name: Glow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1599457342737502
 GameObject:
   m_ObjectHideFlags: 0
@@ -99,7 +99,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1401029969634422}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.024, y: -0.119, z: 0}
+  m_LocalPosition: {x: -0.024, y: -0.119, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4066959159067748}
@@ -112,7 +112,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1493050557681656}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.024, y: 0.04, z: 0}
+  m_LocalPosition: {x: 0.024, y: 0.04, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4066959159067748}
@@ -125,7 +125,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1359997736236610}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.006, y: -0.324, z: -1}
+  m_LocalPosition: {x: -0.006, y: -0.324, z: -1.5}
   m_LocalScale: {x: 0.8717347, y: 0.8717347, z: 0.8717347}
   m_Children: []
   m_Father: {fileID: 4066959159067748}
@@ -142,6 +142,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24ff24b64a87d1543bff017f6a4e2bed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  potions:
+  - {fileID: 21300004, guid: e5403aa356a80d4438bdf6c868a250bd, type: 3}
+  - {fileID: 21300006, guid: e5403aa356a80d4438bdf6c868a250bd, type: 3}
+  - {fileID: 21300008, guid: e5403aa356a80d4438bdf6c868a250bd, type: 3}
+  - {fileID: 21300010, guid: e5403aa356a80d4438bdf6c868a250bd, type: 3}
+  - {fileID: 21300012, guid: e5403aa356a80d4438bdf6c868a250bd, type: 3}
+  - {fileID: 21300014, guid: e5403aa356a80d4438bdf6c868a250bd, type: 3}
 --- !u!212 &212039139910299024
 SpriteRenderer:
   m_ObjectHideFlags: 1

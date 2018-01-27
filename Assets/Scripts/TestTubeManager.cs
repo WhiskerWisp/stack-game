@@ -36,7 +36,7 @@ public class TestTubeManager : MonoBehaviour {
                                     transform.position + new Vector3(0, startYPos + ((stackPointer + 1) * gapSize), -1-((stackPointer + 1) * gapSize)),
                                     Quaternion.identity);
         element.transform.parent = gameObject.transform;
-        element.GetComponent<Element>().SetColour(colour);
+        element.GetComponent<Fill>().SetColour(colour);
         elements.Add(element);
         stackPointer++;
     }
@@ -50,7 +50,7 @@ public class TestTubeManager : MonoBehaviour {
         if (stackPointer < 0) {
             return 0;
         }
-        int colour = elements[stackPointer].GetComponent<Element>().GetColour();
+        int colour = elements[stackPointer].GetComponent<Fill>().GetColour();
         Destroy(elements[stackPointer]);
         elements.RemoveAt(stackPointer);
         stackPointer--;

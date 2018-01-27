@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Element : MonoBehaviour {
+public class Fill : MonoBehaviour {
 
     private int colour;
-    public Sprite[] potions;
+    public Sprite[] fills;
     
     // Use this for initialization
     void Start () {
@@ -19,7 +19,7 @@ public class Element : MonoBehaviour {
 
     public void SetColour(int col) {
         colour = col;
-        transform.Find("Fill").gameObject.GetComponent<SpriteRenderer>().sprite = potions[col-1];
+        gameObject.GetComponent<SpriteRenderer>().sprite = fills[col-1];
     }
 
     public int GetColour() {

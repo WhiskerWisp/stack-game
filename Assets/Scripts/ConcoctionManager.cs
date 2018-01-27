@@ -35,7 +35,7 @@ public class ConcoctionManager : MonoBehaviour {
                         transform.position + (new Vector3(startXPos, startYPos + (elements.Count * gapSize), -1-(elements.Count * gapSize))),
                         Quaternion.identity);
         element.transform.parent = gameObject.transform;
-        element.GetComponent<Element>().SetColour(colour);
+        element.GetComponent<Fill>().SetColour(colour);
         elements.Add(element);
         CheckWinCondition();
     }
@@ -45,7 +45,7 @@ public class ConcoctionManager : MonoBehaviour {
             return;
         }
         for (int i = 0; i < expected.Count; i++) {
-            if (expected[i] != elements[i].GetComponent<Element>().GetColour()) {
+            if (expected[i] != elements[i].GetComponent<Fill>().GetColour()) {
                 return;
             }
         }

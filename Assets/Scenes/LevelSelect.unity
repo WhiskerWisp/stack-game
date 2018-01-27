@@ -194,6 +194,48 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1049676983
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4066959159067748, guid: 8c15538b4c16e7b478214d9c80632911, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -6.457
+      objectReference: {fileID: 0}
+    - target: {fileID: 4066959159067748, guid: 8c15538b4c16e7b478214d9c80632911, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 3.88
+      objectReference: {fileID: 0}
+    - target: {fileID: 4066959159067748, guid: 8c15538b4c16e7b478214d9c80632911, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4066959159067748, guid: 8c15538b4c16e7b478214d9c80632911, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4066959159067748, guid: 8c15538b4c16e7b478214d9c80632911, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4066959159067748, guid: 8c15538b4c16e7b478214d9c80632911, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4066959159067748, guid: 8c15538b4c16e7b478214d9c80632911, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4066959159067748, guid: 8c15538b4c16e7b478214d9c80632911, type: 2}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 8c15538b4c16e7b478214d9c80632911, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1376887571
 GameObject:
   m_ObjectHideFlags: 0
@@ -292,7 +334,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65807399891e198418a661a0d6808ea3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shelf: 010000000100000001000000010000000100000001000000
+  shelf: 010000000200000003000000040000000500000006000000
   expected: 010000000100000001000000010000000100000001000000
 --- !u!4 &1376887575
 Transform:
