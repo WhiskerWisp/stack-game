@@ -50,7 +50,9 @@ public class ConcoctionManager : MonoBehaviour {
             }
         }
         // Game is won!
-        Debug.Log("You won!");
+        //Debug.Log("You won!");
+        //yield return new WaitForSeconds(440);
+        UnityEngine.SceneManagement.SceneManager.LoadScene("WinScreen");
     }
 
     public void Restart() {
